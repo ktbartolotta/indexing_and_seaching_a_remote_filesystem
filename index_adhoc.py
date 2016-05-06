@@ -9,7 +9,7 @@ ssh = paramiko.SSHClient()
 ssh.load_system_host_keys()
 ssh.set_missing_host_key_policy(
     paramiko.AutoAddPolicy())
-ssh.connect("lnx-efh-1")
+ssh.connect("host")
 
 schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT)
 
